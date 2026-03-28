@@ -1,0 +1,18 @@
+name: "test-writer"
+version: "1.0.0"
+description: "Generate comprehensive unit and integration tests for your code"
+author: "@example"
+license: MIT
+triggers:
+  - "write tests"
+  - "add tests"
+  - "generate tests"
+  - "test this function"
+  - "unit tests"
+categories:
+  - testing
+  - code-quality
+platforms:
+  - claude
+  - cursor
+  - mcp

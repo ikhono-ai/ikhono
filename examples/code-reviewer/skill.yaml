@@ -1,0 +1,17 @@
+name: "code-reviewer"
+version: "1.0.0"
+description: "Review code changes for bugs, quality issues, and best practices"
+author: "@example"
+license: MIT
+triggers:
+  - "review this code"
+  - "code review"
+  - "review my PR"
+  - "check this for bugs"
+categories:
+  - code-review
+  - quality
+platforms:
+  - claude
+  - cursor
+  - mcp

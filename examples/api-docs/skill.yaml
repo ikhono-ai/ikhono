@@ -1,0 +1,17 @@
+name: "api-docs"
+version: "1.0.0"
+description: "Generate clear API documentation from source code"
+author: "@example"
+license: MIT
+triggers:
+  - "document this API"
+  - "generate API docs"
+  - "write documentation"
+  - "API reference"
+categories:
+  - documentation
+  - api
+platforms:
+  - claude
+  - cursor
+  - mcp
