@@ -43,14 +43,15 @@ To use personalized features (pins, ratings, publishing), add your API token:
 
 Get your token by running:
 ```bash
-npx @ikhono/cli login --email you@example.com --password yourpassword
+npm install -g @ikhono/cli
+ikh login --email you@example.com --password yourpassword
 cat ~/.ikhono/config.json
 ```
 
 ## Scaffolding a Skill for Claude Code
 
 ```bash
-npx @ikhono/cli skill init my-skill --platform claude
+ikh skill init my-skill --platform claude
 ```
 
 This creates:

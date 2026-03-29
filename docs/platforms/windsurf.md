@@ -35,7 +35,8 @@ Restart Windsurf to load the MCP server.
 
 Get your token by running:
 ```bash
-npx @ikhono/cli login --email you@example.com --password yourpassword
+npm install -g @ikhono/cli
+ikh login --email you@example.com --password yourpassword
 cat ~/.ikhono/config.json
 ```
 
@@ -46,7 +47,7 @@ For all projects, add to `~/.windsurf/mcp.json`.
 ## Scaffolding a Skill for Windsurf
 
 ```bash
-npx @ikhono/cli skill init my-skill --platform windsurf
+ikh skill init my-skill --platform windsurf
 ```
 
 This creates:

@@ -5,12 +5,6 @@ The iKhono CLI (`ikh`) is the tool for skill creators to scaffold, publish, and 
 ## Installation
 
 ```bash
-npx @ikhono/cli <command>
-```
-
-Or install globally:
-
-```bash
 npm install -g @ikhono/cli
 ikh <command>
 ```
@@ -115,6 +109,31 @@ ikh stats @username/skill-name
 
 Shows: rating, total uses, pin count, version, and categories. Requires prior login.
 
+### ikh update
+
+Update the iKhono CLI to the latest version.
+
+```bash
+ikh update
+```
+
+Checks npm for a newer version and installs it if available. No options.
+
+### ikh auto-update [on|off]
+
+Toggle automatic CLI updates. When enabled, the CLI checks for a newer version before each command and automatically installs it if available.
+
+```bash
+# Check current setting
+ikh auto-update
+
+# Enable
+ikh auto-update on
+
+# Disable
+ikh auto-update off
+```
+
 ## Configuration
 
 CLI config is stored at `~/.ikhono/config.json`:
@@ -123,7 +142,8 @@ CLI config is stored at `~/.ikhono/config.json`:
 {
   "apiUrl": "https://api.ikhono.dev",
   "token": "sk_...",
-  "username": "your-username"
+  "username": "your-username",
+  "autoUpdate": true
 }
 ```
 

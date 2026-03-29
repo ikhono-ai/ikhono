@@ -9,9 +9,9 @@ A skill consists of two files: `skill.yaml` (metadata) and `SKILL.md` (instructi
 | Field | Type | Rules | Example |
 |-------|------|-------|---------|
 | `name` | string | Lowercase alphanumeric + hyphens, 1-100 chars | `"security-reviewer"` |
-| `version` | string | Valid semver | `"1.0.0"` |
+| `version` | string | Semver `MAJOR.MINOR.PATCH` (e.g., `1.0.0`) | `"1.0.0"` |
 | `description` | string | 1-500 chars | `"Reviews code for OWASP Top 10"` |
-| `author` | string | `@username` format | `"@alice"` |
+| `author` | string | Non-empty string, convention: `@username` | `"@alice"` |
 | `triggers` | string[] | At least 1 | `["security review", "check vulnerabilities"]` |
 | `categories` | string[] | At least 1 | `["security", "code-review"]` |
 
@@ -33,7 +33,6 @@ Valid platform values:
 | `cursor` | Cursor |
 | `windsurf` | Windsurf |
 | `copilot` | GitHub Copilot |
-| `codex` | OpenAI Codex |
 | `openai` | OpenAI (generic) |
 | `mcp` | Any MCP-compatible client |
 
@@ -44,18 +43,21 @@ Define configurable variables that users can override:
 ```yaml
 config:
   severity_threshold:
-    type: string
+    type: enum
     values: [low, medium, high, critical]
     default: medium
   max_findings:
-    type: string
-    default: "10"
+    type: number
+    default: 10
+  verbose:
+    type: boolean
+    default: false
 ```
 
 Each config entry supports:
-- `type`: always `"string"`
-- `values` (optional): allowed values (enum)
-- `default` (optional): default value
+- `type`: one of `string`, `number`, `boolean`, `enum`
+- `values` (optional): allowed values (used with `enum` type)
+- `default` (optional): default value (`string`, `number`, or `boolean`)
 
 ### Full Example
 

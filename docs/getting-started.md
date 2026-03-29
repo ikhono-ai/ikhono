@@ -31,7 +31,7 @@ Ask your AI agent:
 
 > "Search iKhono for a code review skill"
 
-The agent will use `ikhono_search` to find matching skills and show you the results:
+The agent will use `ikhono_skill_search` to find matching skills and show you the results:
 
 ```
 Found 3 skills:
@@ -44,7 +44,7 @@ Found 3 skills:
 
 > "Load the security-reviewer skill"
 
-The agent calls `ikhono_get_skill` and the skill's instructions are injected into the conversation. Now the agent has specialized expertise for that task.
+The agent calls `ikhono_skill_get` and the skill's instructions are injected into the conversation. Now the agent has specialized expertise for that task.
 
 ## Step 4: Pin Your Favorites
 
@@ -72,9 +72,9 @@ These are the tools available to your AI agent once the MCP server is connected:
 
 | Tool | Description |
 |------|-------------|
-| `ikhono_search` | Search skills by query, category, or author |
-| `ikhono_get_skill` | Load a skill's full instructions by slug |
-| `ikhono_pin` | Pin a skill to your favorites |
-| `ikhono_unpin` | Remove a skill from favorites |
-| `ikhono_list_pinned` | List all your pinned skills |
-| `ikhono_rate` | Rate a skill (1-5 stars) with optional review |
+| `ikhono_skill_search` | Search skills by query, category, or author |
+| `ikhono_skill_get` | Load a skill's full instructions by slug |
+| `ikhono_skill_pin` | Pin a skill to your favorites |
+| `ikhono_skill_unpin` | Remove a skill from favorites |
+| `ikhono_skill_list_pinned` | List all your pinned skills |
+| `ikhono_skill_rate` | Rate a skill (1-5 stars) with optional review |

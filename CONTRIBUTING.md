@@ -4,10 +4,11 @@ Thanks for your interest in contributing to iKhono! The best way to contribute i
 
 ## Creating a Skill
 
-1. **Install the CLI**: `npx @ikhono/cli login --email you@example.com --password yourpassword`
-2. **Scaffold**: `npx @ikhono/cli skill init my-skill`
-3. **Write**: Edit `skill.yaml` (metadata) and `SKILL.md` (instructions)
-4. **Publish**: `npx @ikhono/cli skill publish --changelog "Initial release"`
+1. **Install the CLI**: `npm install -g @ikhono/cli`
+2. **Login**: `ikh login --email you@example.com --password yourpassword`
+3. **Scaffold**: `ikh skill init my-skill`
+4. **Write**: Edit `skill.yaml` (metadata) and `SKILL.md` (instructions)
+5. **Publish**: `ikh skill publish --changelog "Initial release"`
 
 See the [Creating Skills Guide](docs/creating-skills.md) for a full walkthrough.
 
@@ -23,6 +24,17 @@ See [example skills](examples/) for reference.
 ## Improving Documentation
 
 Found a typo, unclear instruction, or missing info? Open an issue or PR on this repo.
+
+## Testing on Other Platforms
+
+We currently test iKhono on **Claude Code**. We'd love help testing on other platforms:
+
+- [Cursor](docs/platforms/cursor.md)
+- [Windsurf](docs/platforms/windsurf.md)
+- [GitHub Copilot](docs/platforms/copilot.md)
+- [OpenAI Codex](docs/platforms/codex.md)
+
+If you use any of these, try connecting the MCP server and report what works, what breaks, or what feels off. Open an issue with the platform name and steps to reproduce.
 
 ## Reporting Issues
 

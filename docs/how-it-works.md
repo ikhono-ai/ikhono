@@ -36,11 +36,11 @@ You ask your AI agent to do something — review code, write tests, generate doc
 
 ### 3. The Agent Searches the Registry
 
-The agent calls `ikhono_search` with a query like "security review". The MCP server forwards this to the iKhono API, which returns matching skills ranked by relevance, rating, and usage.
+The agent calls `ikhono_skill_search` with a query like "security review". The MCP server forwards this to the iKhono API, which returns matching skills ranked by relevance, rating, and usage.
 
 ### 4. The Agent Loads a Skill
 
-The agent calls `ikhono_get_skill` with a skill's slug (e.g., `@alice/security-reviewer`). The full SKILL.md content is returned — detailed instructions that tell the agent exactly how to perform the task.
+The agent calls `ikhono_skill_get` with a skill's slug (e.g., `@alice/security-reviewer`). The full SKILL.md content is returned — detailed instructions that tell the agent exactly how to perform the task.
 
 ### 5. The Agent Follows the Instructions
 

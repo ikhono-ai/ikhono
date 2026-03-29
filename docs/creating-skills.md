@@ -13,17 +13,20 @@ Skills are published under a slug like `@username/skill-name` and can be discove
 ## Quick Start
 
 ```bash
-# 1. Login (or register at ikhono.dev)
-npx @ikhono/cli login --email you@example.com --password yourpassword
+# 1. Install the CLI
+npm install -g @ikhono/cli
 
-# 2. Scaffold a new skill
-npx @ikhono/cli skill init my-skill
+# 2. Login (or register at ikhono.dev)
+ikh login --email you@example.com --password yourpassword
 
-# 3. Edit skill.yaml and SKILL.md in the my-skill/ directory
+# 3. Scaffold a new skill
+ikh skill init my-skill
 
-# 4. Publish
+# 4. Edit skill.yaml and SKILL.md in the my-skill/ directory
+
+# 5. Publish
 cd my-skill
-npx @ikhono/cli skill publish --changelog "Initial release"
+ikh skill publish --changelog "Initial release"
 ```
 
 Your skill is now live at `@your-username/my-skill`.
@@ -33,7 +36,7 @@ Your skill is now live at `@your-username/my-skill`.
 ### 1. Scaffold
 
 ```bash
-npx @ikhono/cli skill init my-skill-name
+ikh skill init my-skill-name
 ```
 
 This creates a directory with `skill.yaml` and `SKILL.md` templates.
@@ -41,17 +44,17 @@ This creates a directory with `skill.yaml` and `SKILL.md` templates.
 You can also scaffold platform-specific files:
 
 ```bash
-npx @ikhono/cli skill init my-skill --platform claude    # + CLAUDE.md + .claude/settings.json
-npx @ikhono/cli skill init my-skill --platform cursor    # + .cursor/rules/ + .cursor/mcp.json
-npx @ikhono/cli skill init my-skill --platform windsurf  # + .windsurf/rules/ + .windsurf/mcp.json
-npx @ikhono/cli skill init my-skill --platform copilot   # + .github/instructions/ + .vscode/mcp.json
-npx @ikhono/cli skill init my-skill --platform codex     # + AGENTS.md
+ikh skill init my-skill --platform claude    # + CLAUDE.md + .claude/settings.json
+ikh skill init my-skill --platform cursor    # + .cursor/rules/ + .cursor/mcp.json
+ikh skill init my-skill --platform windsurf  # + .windsurf/rules/ + .windsurf/mcp.json
+ikh skill init my-skill --platform copilot   # + .github/instructions/ + .vscode/mcp.json
+ikh skill init my-skill --platform codex     # + AGENTS.md
 ```
 
 ### 2. Edit skill.yaml
 
 ```yaml
-name: "my-skill-name"          # lowercase, hyphens only, no spaces
+name: "my-skill-name"          # lowercase alphanumeric + hyphens, no spaces
 version: "1.0.0"               # semver format (major.minor.patch)
 description: "What this skill does in one sentence"
 author: "@your-username"
@@ -77,7 +80,7 @@ platforms:                      # where this skill can run
 - `description`: 1-500 characters
 - `triggers`: at least 1 trigger phrase
 - `categories`: at least 1 category
-- `platforms`: valid values are `claude`, `cursor`, `openai`, `mcp`, `windsurf`, `copilot`
+- `platforms`: valid values are `claude`, `cursor`, `windsurf`, `copilot`, `openai`, `mcp`
 
 ### 3. Write SKILL.md
 
@@ -110,7 +113,7 @@ You are an expert at [domain].
 ### 4. Publish
 
 ```bash
-npx @ikhono/cli skill publish --changelog "Initial release"
+ikh skill publish --changelog "Initial release"
 ```
 
 **Pre-publish checklist:**
@@ -131,7 +134,7 @@ npx @ikhono/cli skill publish --changelog "Initial release"
 ### Updating an Existing Skill
 1. Bump the `version` in `skill.yaml`
 2. Make your changes to `SKILL.md` and/or `skill.yaml`
-3. Run `npx @ikhono/cli skill publish --changelog "description of changes"`
+3. Run `ikh skill publish --changelog "description of changes"`
 
 ### Writing Good Changelogs
 A changelog should answer: what changed, why, and does the user need to do anything?

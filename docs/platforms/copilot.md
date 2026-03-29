@@ -37,7 +37,8 @@ Restart VS Code to load the MCP server.
 
 Get your token by running:
 ```bash
-npx @ikhono/cli login --email you@example.com --password yourpassword
+npm install -g @ikhono/cli
+ikh login --email you@example.com --password yourpassword
 cat ~/.ikhono/config.json
 ```
 
@@ -48,7 +49,7 @@ For all projects, add to `~/.vscode/mcp.json`.
 ## Scaffolding a Skill for Copilot
 
 ```bash
-npx @ikhono/cli skill init my-skill --platform copilot
+ikh skill init my-skill --platform copilot
 ```
 
 This creates:

@@ -13,7 +13,7 @@ Then run Codex with the iKhono MCP server available.
 ## Scaffolding a Skill for Codex
 
 ```bash
-npx @ikhono/cli skill init my-skill --platform codex
+ikh skill init my-skill --platform codex
 ```
 
 This creates:
@@ -31,7 +31,8 @@ export IKHONO_API_TOKEN="sk_your_token_here"
 
 Get your token by running:
 ```bash
-npx @ikhono/cli login --email you@example.com --password yourpassword
+npm install -g @ikhono/cli
+ikh login --email you@example.com --password yourpassword
 cat ~/.ikhono/config.json
 ```
 

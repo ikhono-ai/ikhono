@@ -1,6 +1,13 @@
-# iKhono — The npm for AI Skills
+<p align="center">
+  <img src="assets/logo-wide-light.png#gh-light-mode-only" alt="iKhono" width="60%">
+  <img src="assets/logo-wide-dark.png#gh-dark-mode-only" alt="iKhono" width="60%">
+</p>
+<h1 align="center">The npm for AI Skills</h1>
 
-Publish, discover, and use AI agent skills across all platforms. Connect the MCP server once and every skill on the registry becomes instantly available — no local installation needed.
+<p align="center">
+Publish, discover, and use AI agent skills across all platforms.<br>
+Connect the MCP server once and every skill on the registry becomes instantly available — no local installation needed.
+</p>
 
 ## Why iKhono?
 
@@ -33,10 +40,12 @@ Or the agent will suggest skills when it detects a relevant task.
 
 | Action | What Happens |
 |--------|-------------|
-| **Search** | `ikhono_search` finds skills by query, category, or author |
-| **Load** | `ikhono_get_skill` loads full instructions into your AI agent |
-| **Pin** | `ikhono_pin` saves favorites for quick access |
-| **Rate** | `ikhono_rate` helps the community find the best skills |
+| **Search** | `ikhono_skill_search` finds skills by query, category, or author |
+| **Load** | `ikhono_skill_get` loads full instructions into your AI agent |
+| **Pin** | `ikhono_skill_pin` saves favorites for quick access |
+| **Unpin** | `ikhono_skill_unpin` removes a skill from favorites |
+| **List Pinned** | `ikhono_skill_list_pinned` shows your pinned skills |
+| **Rate** | `ikhono_skill_rate` helps the community find the best skills |
 
 ## How It Works
 
@@ -67,13 +76,16 @@ Have expertise to share? Publish a skill in minutes:
 
 ```bash
 # Install the CLI
-npx @ikhono/cli login --email you@example.com --password yourpassword
+npm install -g @ikhono/cli
+
+# Login
+ikh login --email you@example.com --password yourpassword
 
 # Scaffold a new skill
-npx @ikhono/cli skill init my-skill
+ikh skill init my-skill
 
 # Edit skill.yaml and SKILL.md, then publish
-npx @ikhono/cli skill publish --changelog "Initial release"
+ikh skill publish --changelog "Initial release"
 ```
 
 Your skill is now available to everyone on the registry as `@your-username/my-skill`.
@@ -96,11 +108,9 @@ Your skill is now available to everyone on the registry as `@your-username/my-sk
 | [CLI Reference](docs/cli-reference.md) | Command-line tool docs |
 | [Platform Guides](docs/platforms/) | Per-platform setup instructions |
 
-## Community
+## Contributing
 
-- [Skill Ideas](community/SKILL_IDEAS.md) — Ideas for skills you can build
-- [Showcase](community/SHOWCASE.md) — Featured skills and creators
-- [Contributing](CONTRIBUTING.md) — How to contribute skills
+See [CONTRIBUTING.md](CONTRIBUTING.md) for how to contribute skills and help test on different platforms.
 
 ## FAQ
 
