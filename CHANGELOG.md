@@ -2,6 +2,12 @@
 
 All notable changes to iKhono will be documented in this file.
 
+## [0.1.2] - 2026-03-30
+
+### Added
+- CLI auto-update: `ikh update` to manually update, `ikh auto-update on/off` to toggle
+- Background update notification on every CLI run (24h cache, non-blocking)
+
 ## [0.1.0] - 2026-03-28
 
 ### Added
