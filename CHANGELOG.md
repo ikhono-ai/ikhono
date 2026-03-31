@@ -2,12 +2,12 @@
 
 All notable changes to iKhono will be documented in this file.
 
-## [0.1.5] - 2026-03-31
+## [0.1.6] - 2026-03-31
 
 ### Added
 - `ikh setup --platform <platform>` command for global one-time MCP + slash command installation
 - `--auto-approve` flag (Claude only) to auto-allow iKhono MCP tools without permission prompts
-- Supported platforms: claude, cursor, windsurf, copilot, codex
+- Supported platforms: claude, cursor, windsurf, copilot, codex, claude-desktop, gemini
 
 ### Fixed
 - Default API URL now points to production (`https://ikhono.io`) in CLI, MCP server, and seed data

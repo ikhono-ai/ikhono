@@ -123,7 +123,7 @@ ikh setup --platform claude --auto-approve
 
 | Option | Required | Description |
 |--------|----------|-------------|
-| `--platform <platform>` | Yes | AI platform to configure (claude, cursor, windsurf, copilot, codex) |
+| `--platform <platform>` | Yes | AI platform to configure (claude, cursor, windsurf, copilot, codex, claude-desktop, gemini) |
 | `--auto-approve` | No | Auto-allow iKhono MCP tools without permission prompts (Claude only) |
 
 **What gets installed:**

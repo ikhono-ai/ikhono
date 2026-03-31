@@ -75,6 +75,8 @@ The MCP server is a **thin proxy** — it connects your AI agent to the iKhono r
 | [Windsurf](docs/platforms/windsurf.md) | `.windsurf/mcp.json` | Supported |
 | [GitHub Copilot](docs/platforms/copilot.md) | `.vscode/mcp.json` | Supported |
 | [OpenAI Codex](docs/platforms/codex.md) | Environment variables | Supported |
+| Claude Desktop | `claude_desktop_config.json` | Supported |
+| Gemini CLI | `~/.gemini/settings.json` | Supported |
 
 ## For Skill Creators
 

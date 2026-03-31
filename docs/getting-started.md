@@ -11,7 +11,7 @@ npm install -g @ikhono/cli
 ikh setup --platform claude
 ```
 
-This installs the MCP server config and a `/skill` slash command globally. Available platforms: `claude`, `cursor`, `windsurf`, `copilot`, `codex`.
+This installs the MCP server config and a `/skill` slash command globally. Available platforms: `claude`, `cursor`, `windsurf`, `copilot`, `codex`, `claude-desktop`, `gemini`.
 
 **Or manually:**
 
