@@ -2,6 +2,29 @@
 
 All notable changes to iKhono will be documented in this file.
 
+## [0.1.5] - 2026-03-31
+
+### Added
+- `ikh setup --platform <platform>` command for global one-time MCP + slash command installation
+- `--auto-approve` flag (Claude only) to auto-allow iKhono MCP tools without permission prompts
+- Supported platforms: claude, cursor, windsurf, copilot, codex
+
+### Fixed
+- Default API URL now points to production (`https://ikhono.io`) in CLI, MCP server, and seed data
+- `ikh update` now installs the exact version instead of `@latest` to avoid stale pnpm cache
+- Update notification banner no longer shows after `ikh update` completes
+- MCP server migrated from deprecated `server.tool()` to `server.registerTool()` API
+- Added `-y` flag to `npx` in MCP config snippets for non-interactive installs
+
+## [0.1.3] - 2026-03-30
+
+### Changed
+- MCP search returns formatted text previews (name, rating, uses, pins) instead of raw JSON
+- Default search limit reduced from 5 to 3 for more focused results
+
+### Fixed
+- Rate and pin endpoints now return clear 401 error instead of 500 when user session is invalid
+
 ## [0.1.2] - 2026-03-30
 
 ### Added

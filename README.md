@@ -21,9 +21,15 @@ AI coding agents are powerful but generic. **Skills** give them specialized expe
 
 ### 1. Add the MCP Server
 
-**Claude Code:**
+**Fastest way (any platform):**
 ```bash
-claude mcp add ikhono -- npx @ikhono/mcp
+npm install -g @ikhono/cli
+ikh setup --platform claude
+```
+
+**Or manually (Claude Code):**
+```bash
+claude mcp add ikhono -- npx -y @ikhono/mcp
 ```
 
 **Cursor / Windsurf / Copilot:** See [platform setup guides](docs/platforms/).

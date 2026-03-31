@@ -4,11 +4,20 @@ Get iKhono running in 5 minutes. By the end, your AI agent will have access to t
 
 ## Step 1: Add the MCP Server
 
-Choose your platform and add the iKhono MCP server:
+The fastest way is using the CLI setup command:
+
+```bash
+npm install -g @ikhono/cli
+ikh setup --platform claude
+```
+
+This installs the MCP server config and a `/skill` slash command globally. Available platforms: `claude`, `cursor`, `windsurf`, `copilot`, `codex`.
+
+**Or manually:**
 
 **Claude Code:**
 ```bash
-claude mcp add ikhono -- npx @ikhono/mcp
+claude mcp add ikhono -- npx -y @ikhono/mcp
 ```
 
 **Cursor:** Add to `.cursor/mcp.json`:
@@ -17,7 +26,7 @@ claude mcp add ikhono -- npx @ikhono/mcp
   "mcpServers": {
     "ikhono": {
       "command": "npx",
-      "args": ["@ikhono/mcp"]
+      "args": ["-y", "@ikhono/mcp"]
     }
   }
 }
