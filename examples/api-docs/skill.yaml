@@ -1,7 +1,7 @@
 name: "api-docs"
 version: "1.0.0"
 description: "Generate clear API documentation from source code"
-author: "@example"
+author: "@ikh-skills"
 license: MIT
 triggers:
   - "document this API"

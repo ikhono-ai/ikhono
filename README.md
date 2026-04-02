@@ -2,7 +2,7 @@
   <img src="assets/logo-wide-light.png#gh-light-mode-only" alt="iKhono" width="60%">
   <img src="assets/logo-wide-dark.png#gh-dark-mode-only" alt="iKhono" width="60%">
 </p>
-<h1 align="center">The npm for AI Skills</h1>
+<h1 align="center">The hub for AI Skills</h1>
 
 <p align="center">
 Publish, discover, and use AI agent skills across all platforms.<br>

@@ -1,7 +1,7 @@
 name: "test-writer"
 version: "1.0.0"
 description: "Generate comprehensive unit and integration tests for your code"
-author: "@example"
+author: "@ikh-skills"
 license: MIT
 triggers:
   - "write tests"

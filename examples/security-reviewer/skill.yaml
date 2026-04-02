@@ -1,0 +1,23 @@
+name: "security-reviewer"
+version: "1.2.0"
+description: "Review code for security vulnerabilities — injection, auth bypass, data exposure, and OWASP Top 10"
+author: "@ikh-skills"
+license: MIT
+triggers:
+  - "security review"
+  - "check for vulnerabilities"
+  - "review this for security issues"
+  - "OWASP review"
+  - "find security bugs"
+categories:
+  - security
+  - code-review
+platforms:
+  - claude
+  - cursor
+  - mcp
+config:
+  severity_threshold:
+    type: string
+    values: [low, medium, high, critical]
+    default: low

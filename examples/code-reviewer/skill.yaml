@@ -1,7 +1,7 @@
 name: "code-reviewer"
 version: "1.0.0"
 description: "Review code changes for bugs, quality issues, and best practices"
-author: "@example"
+author: "@ikh-skills"
 license: MIT
 triggers:
   - "review this code"
