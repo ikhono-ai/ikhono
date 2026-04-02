@@ -1,23 +1,36 @@
+<br>
+
 <p align="center">
   <img src="assets/logo-wide-light.png#gh-light-mode-only" alt="iKhono" width="60%">
   <img src="assets/logo-wide-dark.png#gh-dark-mode-only" alt="iKhono" width="60%">
 </p>
-<h1 align="center">The hub for AI Skills</h1>
+
+---
+
+<br>
+
+<h1 style="border:unset" align="center">The <span style="color:orange">hub</span> for AI Skills</h1>
 
 <p align="center">
 Publish, discover, and use AI agent skills across all platforms.<br>
 Connect the MCP server once and every skill on the registry becomes instantly available — no local installation needed.
 </p>
 
-## Why iKhono?
+<br>
+
+<p align="center">
+  <img src="assets/demo.gif" alt="iKhono demo — security review skill" width="800" style="border-radius: 12px;">
+</p>
+
+## 💡 Why iKhono?
 
 AI coding agents are powerful but generic. **Skills** give them specialized expertise — security review, test writing, API design — crafted by the community.
 
-- **Use a skill**: Connect the MCP server and search for what you need
-- **Create a skill**: Write a SKILL.md, publish with one command
-- **Share a skill**: Your skills work on Claude, Cursor, Windsurf, Copilot, and Codex
+- 🔌 **Use a skill**: Connect the MCP server and search for what you need
+- ✏️ **Create a skill**: Write a SKILL.md, publish with one command
+- 🌍 **Share a skill**: Your skills work on Claude, Cursor, Windsurf, Copilot, and Codex
 
-## Quick Start
+## 🚀 Quick Start
 
 ### 1. Add the MCP Server
 
@@ -44,29 +57,29 @@ Or the agent will suggest skills when it detects a relevant task.
 
 ### 3. Explore
 
-| Action | What Happens |
-|--------|-------------|
-| **Search** | `ikhono_skill_search` finds skills by query, category, or author |
-| **Load** | `ikhono_skill_get` loads full instructions into your AI agent |
-| **Pin** | `ikhono_skill_pin` saves favorites for quick access |
-| **Unpin** | `ikhono_skill_unpin` removes a skill from favorites |
-| **List Pinned** | `ikhono_skill_list_pinned` shows your pinned skills |
-| **Rate** | `ikhono_skill_rate` helps the community find the best skills |
+| Action | Command | What Happens |
+|--------|---------|-------------|
+| **Search** | `/skill search` | Find skills by query, category, or author |
+| **Load** | `/skill load` | Load full instructions into your AI agent |
+| **Pin** | `/skill pin` | Save favorites for quick access |
+| **Unpin** | `/skill unpin` | Remove a skill from favorites |
+| **List Pinned** | `/skill list-pinned` | Show your pinned skills |
+| **Rate** | `/skill rate` | Help the community find the best skills |
 
-## How It Works
+## 🔍 How It Works
 
 ```
-You  -->  AI Agent  -->  iKhono MCP Server  -->  iKhono Registry
-                              |
-                    search, load, pin, rate
-                              |
+You  -▶  AI Agent  -▶  iKhono MCP Server  -▶  iKhono Registry
+                              ⬇
+                            search
+                              ⬇
                     Skills loaded on-demand
-                    into your AI agent
+                      into your AI agent
 ```
 
 The MCP server is a **thin proxy** — it connects your AI agent to the iKhono registry. When you (or your agent) search for a skill, the instructions are fetched and injected into the conversation. No files downloaded, no local setup.
 
-## Supported Platforms
+## 🖥 Supported Platforms
 
 | Platform | Setup Guide | Status |
 |----------|-------------|--------|
@@ -78,7 +91,7 @@ The MCP server is a **thin proxy** — it connects your AI agent to the iKhono r
 | Claude Desktop | `claude_desktop_config.json` | Supported |
 | Gemini CLI | `~/.gemini/settings.json` | Supported |
 
-## For Skill Creators
+## 🛠 For Skill Creators
 
 Have expertise to share? Publish a skill in minutes:
 
@@ -105,7 +118,7 @@ Your skill is now available to everyone on the registry as `@your-username/my-sk
 - [CLI Reference](docs/cli-reference.md) — All commands and options
 - [Example Skills](examples/) — Skills you can reference and fork
 
-## Documentation
+## 📚 Documentation
 
 | Doc | Description |
 |-----|-------------|
@@ -116,27 +129,27 @@ Your skill is now available to everyone on the registry as `@your-username/my-sk
 | [CLI Reference](docs/cli-reference.md) | Command-line tool docs |
 | [Platform Guides](docs/platforms/) | Per-platform setup instructions |
 
-## Contributing
+## 🤝 Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for how to contribute skills and help test on different platforms.
 
-## FAQ
+## ❓ FAQ
 
-**Do I need to install each skill separately?**
-No. The MCP server gives you access to the entire registry. Skills are loaded on-demand when you or your AI agent requests them.
+- **What does iKhono mean?** <br> iKhono means "skill" in Zulu.
 
-**Does it work offline?**
-No. The MCP server fetches skills from the iKhono registry. You need an internet connection.
+- **Do I need to install each skill separately?** <br>
+  No. The MCP server gives you access to the entire registry. <br>
+  Skills are loaded on-demand when you or your AI agent requests them.
 
-**Is it free?**
-Yes. Publishing and using skills is free.
+- **Is it free?** <br> Yes. Publishing and using skills is free.
 
-**Can I use private skills?**
-Not yet. All published skills are public. Private/team skills are on the roadmap.
+- **Can I use private skills?** <br>
+  Not yet. All published skills are public. Private/team skills are on the roadmap.
 
-**What platforms are supported?**
-Any AI tool that supports the Model Context Protocol (MCP). We have setup guides for Claude Code, Cursor, Windsurf, GitHub Copilot, OpenAI Codex, Claude Desktop, and Gemini CLI.
+- **What platforms are supported?** <br>
+  Any AI tool that supports the Model Context Protocol (MCP). <br>
+  We have setup guides for Claude Code, Cursor, Windsurf, GitHub Copilot, OpenAI Codex, Claude Desktop, and Gemini CLI.
 
-## License
+## 📄 License
 
 Documentation and examples in this repository are licensed under [MIT](LICENSE).
