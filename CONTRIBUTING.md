@@ -5,7 +5,7 @@ Thanks for your interest in contributing to iKhono! The best way to contribute i
 ## Creating a Skill
 
 1. **Install the CLI**: `npm install -g @ikhono/cli`
-2. **Login**: `ikh login --email you@example.com --password yourpassword`
+2. **Login**: `ikh login` (opens browser for GitHub SSO)
 3. **Scaffold**: `ikh skill init my-skill`
 4. **Write**: Edit `skill.yaml` (metadata) and `SKILL.md` (instructions)
 5. **Publish**: `ikh skill publish --changelog "Initial release"`

@@ -9,7 +9,7 @@ Add to `.cursor/mcp.json` in your project root (create the file if it doesn't ex
   "mcpServers": {
     "ikhono": {
       "command": "npx",
-      "args": ["@ikhono/mcp"]
+      "args": ["-y", "@ikhono/mcp"]
     }
   }
 }
@@ -24,7 +24,7 @@ Restart Cursor to load the MCP server.
   "mcpServers": {
     "ikhono": {
       "command": "npx",
-      "args": ["@ikhono/mcp"],
+      "args": ["-y", "@ikhono/mcp"],
       "env": {
         "IKHONO_API_TOKEN": "sk_your_token_here"
       }
@@ -36,9 +36,11 @@ Restart Cursor to load the MCP server.
 Get your token by running:
 ```bash
 npm install -g @ikhono/cli
-ikh login --email you@example.com --password yourpassword
+ikh login              # opens browser for GitHub SSO
 cat ~/.ikhono/config.json
 ```
+
+> **Alternative:** `ikh login --email you@example.com --password yourpassword`
 
 ## Global Setup
 

@@ -11,18 +11,44 @@ ikh <command>
 
 ## Commands
 
+### ikh setup
+
+Set up iKhono globally for your AI platform. This is the recommended first command for new users — it installs the MCP server and a `/skill` slash command so iKhono is available in every project.
+
+```bash
+# Default setup
+ikh setup --platform claude
+
+# Auto-approve iKhono MCP tools (no permission prompts, Claude only)
+ikh setup --platform claude --auto-approve
+```
+
+| Option | Required | Description |
+|--------|----------|-------------|
+| `--platform <platform>` | Yes | AI platform to configure (claude, cursor, windsurf, copilot, codex, claude-desktop, gemini) |
+| `--auto-approve` | No | Auto-allow iKhono MCP tools without permission prompts (Claude only) |
+
+**What gets installed:**
+- MCP server config in the platform's global config path
+- A `/skill` slash command (Claude) or rules file (other platforms) with MCP tool routing and CLI reference
+- With `--auto-approve` (Claude only): adds `mcp__ikhono__*` to permissions.allow
+
+Safe to run multiple times — existing configs are merged, not overwritten.
+
 ### ikh login
 
 Authenticate with the iKhono API. Saves credentials to `~/.ikhono/config.json`.
 
 ```bash
-ikh login --email you@example.com --password yourpassword
+ikh login
 ```
+
+Opens your browser for GitHub SSO.
 
 | Option | Required | Description |
 |--------|----------|-------------|
-| `--email <email>` | Yes | Your email address |
-| `--password <password>` | Yes | Your password |
+| `--email <email>` | No | Login with email instead of GitHub |
+| `--password <password>` | No | Password (required with --email) |
 | `--api-url <url>` | No | Override the API URL |
 
 ### ikh whoami
@@ -109,30 +135,6 @@ ikh stats @username/skill-name
 
 Shows: rating, total uses, pin count, version, and categories. Requires prior login.
 
-### ikh setup
-
-Set up iKhono globally for your AI platform. This is the recommended first command for new users — it installs the MCP server and a `/skill` slash command so iKhono is available in every project.
-
-```bash
-# Default setup
-ikh setup --platform claude
-
-# Auto-approve iKhono MCP tools (no permission prompts, Claude only)
-ikh setup --platform claude --auto-approve
-```
-
-| Option | Required | Description |
-|--------|----------|-------------|
-| `--platform <platform>` | Yes | AI platform to configure (claude, cursor, windsurf, copilot, codex, claude-desktop, gemini) |
-| `--auto-approve` | No | Auto-allow iKhono MCP tools without permission prompts (Claude only) |
-
-**What gets installed:**
-- MCP server config in the platform's global config path
-- A `/skill` slash command (Claude) or rules file (other platforms) with MCP tool routing and CLI reference
-- With `--auto-approve` (Claude only): adds `mcp__ikhono__*` to permissions.allow
-
-Safe to run multiple times — existing configs are merged, not overwritten.
-
 ### ikh update
 
 Update the iKhono CLI to the latest version.
@@ -178,7 +180,7 @@ Set automatically by `ikh login`. The MCP server also reads this file as a token
 ### First-time setup
 
 ```bash
-ikh login --email you@example.com --password yourpassword
+ikh login    # opens browser for GitHub SSO
 
 # Set up iKhono globally (MCP server + slash command)
 ikh setup --platform claude

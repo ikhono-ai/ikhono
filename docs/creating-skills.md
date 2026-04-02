@@ -16,8 +16,8 @@ Skills are published under a slug like `@username/skill-name` and can be discove
 # 1. Install the CLI
 npm install -g @ikhono/cli
 
-# 2. Login (or register at ikhono.dev)
-ikh login --email you@example.com --password yourpassword
+# 2. Login
+ikh login              # opens browser for GitHub SSO
 
 # 3. Scaffold a new skill
 ikh skill init my-skill
@@ -80,7 +80,7 @@ platforms:                      # where this skill can run
 - `description`: 1-500 characters
 - `triggers`: at least 1 trigger phrase
 - `categories`: at least 1 category
-- `platforms`: valid values are `claude`, `cursor`, `windsurf`, `copilot`, `openai`, `mcp`
+- `platforms`: valid values are `claude`, `cursor`, `windsurf`, `copilot`, `codex`, `mcp`
 
 ### 3. Write SKILL.md
 

@@ -3,7 +3,7 @@
 ## Quick Setup
 
 ```bash
-claude mcp add ikhono -- npx @ikhono/mcp
+claude mcp add ikhono -- npx -y @ikhono/mcp
 ```
 
 Done. iKhono is now available in all your Claude Code sessions.
@@ -17,7 +17,7 @@ Add to `.claude/settings.json` (project-level) or `~/.claude/settings.json` (glo
   "mcpServers": {
     "ikhono": {
       "command": "npx",
-      "args": ["@ikhono/mcp"]
+      "args": ["-y", "@ikhono/mcp"]
     }
   }
 }
@@ -32,7 +32,7 @@ To use personalized features (pins, ratings, publishing), add your API token:
   "mcpServers": {
     "ikhono": {
       "command": "npx",
-      "args": ["@ikhono/mcp"],
+      "args": ["-y", "@ikhono/mcp"],
       "env": {
         "IKHONO_API_TOKEN": "sk_your_token_here"
       }
@@ -44,9 +44,11 @@ To use personalized features (pins, ratings, publishing), add your API token:
 Get your token by running:
 ```bash
 npm install -g @ikhono/cli
-ikh login --email you@example.com --password yourpassword
+ikh login              # opens browser for GitHub SSO
 cat ~/.ikhono/config.json
 ```
+
+> **Alternative:** `ikh login --email you@example.com --password yourpassword`
 
 ## Scaffolding a Skill for Claude Code
 

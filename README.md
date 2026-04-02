@@ -87,7 +87,7 @@ Have expertise to share? Publish a skill in minutes:
 npm install -g @ikhono/cli
 
 # Login
-ikh login --email you@example.com --password yourpassword
+ikh login              # opens browser for GitHub SSO
 
 # Scaffold a new skill
 ikh skill init my-skill
@@ -135,7 +135,7 @@ Yes. Publishing and using skills is free.
 Not yet. All published skills are public. Private/team skills are on the roadmap.
 
 **What platforms are supported?**
-Any AI tool that supports the Model Context Protocol (MCP). We have setup guides for Claude Code, Cursor, Windsurf, GitHub Copilot, and OpenAI Codex.
+Any AI tool that supports the Model Context Protocol (MCP). We have setup guides for Claude Code, Cursor, Windsurf, GitHub Copilot, OpenAI Codex, Claude Desktop, and Gemini CLI.
 
 ## License
 

@@ -5,7 +5,7 @@
 Codex uses environment variables for MCP configuration. Set the iKhono MCP server in your environment:
 
 ```bash
-export IKHONO_API_URL="https://api.ikhono.dev"
+export IKHONO_API_URL="https://ikhono.io"
 ```
 
 Then run Codex with the iKhono MCP server available.
@@ -32,9 +32,11 @@ export IKHONO_API_TOKEN="sk_your_token_here"
 Get your token by running:
 ```bash
 npm install -g @ikhono/cli
-ikh login --email you@example.com --password yourpassword
+ikh login              # opens browser for GitHub SSO
 cat ~/.ikhono/config.json
 ```
+
+> **Alternative:** `ikh login --email you@example.com --password yourpassword`
 
 ## Usage
 

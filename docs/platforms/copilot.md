@@ -9,7 +9,7 @@ Add to `.vscode/mcp.json` in your project root (create the file if it doesn't ex
   "servers": {
     "ikhono": {
       "command": "npx",
-      "args": ["@ikhono/mcp"]
+      "args": ["-y", "@ikhono/mcp"]
     }
   }
 }
@@ -26,7 +26,7 @@ Restart VS Code to load the MCP server.
   "servers": {
     "ikhono": {
       "command": "npx",
-      "args": ["@ikhono/mcp"],
+      "args": ["-y", "@ikhono/mcp"],
       "env": {
         "IKHONO_API_TOKEN": "sk_your_token_here"
       }
@@ -38,9 +38,11 @@ Restart VS Code to load the MCP server.
 Get your token by running:
 ```bash
 npm install -g @ikhono/cli
-ikh login --email you@example.com --password yourpassword
+ikh login              # opens browser for GitHub SSO
 cat ~/.ikhono/config.json
 ```
+
+> **Alternative:** `ikh login --email you@example.com --password yourpassword`
 
 ## Global Setup
 

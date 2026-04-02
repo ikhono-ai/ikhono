@@ -33,7 +33,7 @@ Valid platform values:
 | `cursor` | Cursor |
 | `windsurf` | Windsurf |
 | `copilot` | GitHub Copilot |
-| `openai` | OpenAI (generic) |
+| `codex` | OpenAI Codex |
 | `mcp` | Any MCP-compatible client |
 
 ### Config
@@ -43,7 +43,7 @@ Define configurable variables that users can override:
 ```yaml
 config:
   severity_threshold:
-    type: enum
+    type: string
     values: [low, medium, high, critical]
     default: medium
   max_findings:
@@ -55,8 +55,8 @@ config:
 ```
 
 Each config entry supports:
-- `type`: one of `string`, `number`, `boolean`, `enum`
-- `values` (optional): allowed values (used with `enum` type)
+- `type`: one of `string`, `number`, `boolean`
+- `values` (optional): allowed values for `string` type (constrains to specific choices)
 - `default` (optional): default value (`string`, `number`, or `boolean`)
 
 ### Full Example
