@@ -28,7 +28,11 @@ iKhono is a **skill registry** with an **MCP server** that connects AI agents to
 
 ### 1. You Connect the MCP Server (Once)
 
-You add the iKhono MCP server to your AI tool's configuration. This is a one-time setup. The MCP server runs locally as a subprocess of your AI agent.
+You add the iKhono MCP server to your AI tool's configuration. This is a one-time setup.
+
+There are two ways to connect:
+- **stdio** — the MCP server runs locally as a subprocess via `npx @ikhono/mcp`
+- **Streamable HTTP** — connect directly to `https://ikhono.io/mcp` with no local install
 
 ### 2. You Ask for Help
 
@@ -81,7 +85,8 @@ Rate skills after using them (1-5 stars, optional review). Ratings help the comm
 
 | Component | Runs | Purpose |
 |-----------|------|---------|
-| MCP server | Your machine (subprocess) | Thin proxy between AI agent and registry |
+| MCP server (stdio) | Your machine (subprocess) | Thin proxy between AI agent and registry |
+| MCP server (HTTP) | iKhono servers (`ikhono.io/mcp`) | Same tools, no local install needed |
 | AI agent | Your machine / cloud | Uses MCP tools to interact with iKhono |
 | Registry API | iKhono servers | Stores and serves skills |
 | CLI (`ikh`) | Your machine | For skill creators to publish and manage skills |

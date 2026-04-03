@@ -8,7 +8,23 @@ claude mcp add ikhono -- npx -y @ikhono/mcp
 
 Done. iKhono is now available in all your Claude Code sessions.
 
-## Manual Setup
+## Streamable HTTP (zero install)
+
+Connect directly to the hosted MCP endpoint — no npm or npx needed:
+
+```bash
+claude mcp add ikhono https://ikhono.io/mcp -t http
+```
+
+Search and load-skill work without auth. For pins and ratings, pass your token:
+
+```bash
+claude mcp add ikhono https://ikhono.io/mcp -t http -H "Authorization: Bearer YOUR_TOKEN"
+```
+
+> **Note:** the stdio setup above is recommended for daily use — it automatically reads your auth token from `~/.ikhono/config.json`. Streamable HTTP is great for trying iKhono without installing anything.
+
+## Manual Setup (stdio — recommended)
 
 Add to `.claude/settings.json` (project-level) or `~/.claude/settings.json` (global):
 

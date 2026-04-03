@@ -17,6 +17,22 @@ Add to `.cursor/mcp.json` in your project root (create the file if it doesn't ex
 
 Restart Cursor to load the MCP server.
 
+## Streamable HTTP (zero install)
+
+If your Cursor version supports Streamable HTTP MCP transport, you can connect directly without npx. Add to `.cursor/mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "ikhono": {
+      "url": "https://ikhono.io/mcp"
+    }
+  }
+}
+```
+
+Search and load-skill work without auth. For pins and ratings, the stdio setup with `~/.ikhono/config.json` is recommended.
+
 ## With Authentication
 
 ```json

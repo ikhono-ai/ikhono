@@ -10,6 +10,10 @@ export IKHONO_API_URL="https://ikhono.io"
 
 Then run Codex with the iKhono MCP server available.
 
+## Streamable HTTP (zero install)
+
+If Codex supports Streamable HTTP MCP transport, you can connect directly to `https://ikhono.io/mcp` without running a local subprocess. Search and load-skill work without auth. For pins and ratings, the stdio setup with `~/.ikhono/config.json` is recommended.
+
 ## Scaffolding a Skill for Codex
 
 ```bash

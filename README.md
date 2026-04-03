@@ -30,16 +30,20 @@ AI coding agents are powerful but generic. **Skills** give them specialized expe
 
 ### 1. Add the MCP Server
 
-**Fastest way (any platform):**
+**Recommended (stdio — full featured, auto-reads auth token):**
 ```bash
 npm install -g @ikhono/cli
 ikh setup --platform claude
 ```
 
-**Or manually (Claude Code):**
+Or manually: `claude mcp add ikhono -- npx -y @ikhono/mcp`
+
+**Zero-install (Streamable HTTP — great for trying it out):**
 ```bash
-claude mcp add ikhono -- npx -y @ikhono/mcp
+claude mcp add ikhono https://ikhono.io/mcp -t http
 ```
+
+> Search and load skills work without auth. For pins and ratings, pass `-H "Authorization: Bearer YOUR_TOKEN"`.
 
 **Cursor / Windsurf / Copilot:** See [platform setup guides](docs/platforms/).
 

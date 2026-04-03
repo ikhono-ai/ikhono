@@ -13,7 +13,7 @@ ikh setup --platform claude
 
 This installs the MCP server config and a `/skill` slash command globally. Available platforms: `claude`, `cursor`, `windsurf`, `copilot`, `codex`, `claude-desktop`, `gemini`.
 
-**Or manually:**
+**Or manually (stdio — recommended):**
 
 **Claude Code:**
 ```bash
@@ -31,6 +31,14 @@ claude mcp add ikhono -- npx -y @ikhono/mcp
   }
 }
 ```
+
+**Or via Streamable HTTP (zero install, great for trying it out):**
+
+```bash
+claude mcp add ikhono https://ikhono.io/mcp -t http
+```
+
+Any MCP client that supports Streamable HTTP transport can connect directly to `https://ikhono.io/mcp`. Search and load-skill work without auth. For pins and ratings, pass an `Authorization: Bearer YOUR_TOKEN` header.
 
 **Other platforms:** See [platform setup guides](platforms/).
 
