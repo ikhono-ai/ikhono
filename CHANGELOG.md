@@ -2,6 +2,20 @@
 
 All notable changes to iKhono will be documented in this file.
 
+## [0.2.6] - 2026-04-03
+
+### Added
+- Streamable HTTP transport — connect to `https://ikhono.io/mcp` directly, no npm install needed
+- `--proactive` flag for `ikh setup` — installs an always-on rule that checks iKhono for relevant skills on every task
+
+
+## [0.2.0] - 2026-04-01
+
+### Added
+- GitHub SSO for `ikh login` — opens browser for OAuth, auto-links accounts by email
+- Landing page at ikhono.io (React + Vite + Tailwind, served by API on Railway)
+- `ikh setup` support for Claude Desktop and Gemini CLI
+
 ## [0.1.6] - 2026-03-31
 
 ### Added
