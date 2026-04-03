@@ -21,17 +21,25 @@ ikh setup --platform claude
 
 # Auto-approve iKhono MCP tools (no permission prompts, Claude only)
 ikh setup --platform claude --auto-approve
+
+# Install proactive skill-check rule (auto-searches iKhono on every task)
+ikh setup --platform claude --proactive
+
+# Combine flags
+ikh setup --platform claude --auto-approve --proactive
 ```
 
 | Option | Required | Description |
 |--------|----------|-------------|
 | `--platform <platform>` | Yes | AI platform to configure (claude, cursor, windsurf, copilot, codex, claude-desktop, gemini) |
 | `--auto-approve` | No | Auto-allow iKhono MCP tools without permission prompts (Claude only) |
+| `--proactive` | No | Install always-on rule that checks iKhono for relevant skills on every task |
 
 **What gets installed:**
 - MCP server config in the platform's global config path
 - A `/skill` slash command (Claude) or rules file (other platforms) with MCP tool routing and CLI reference
 - With `--auto-approve` (Claude only): adds `mcp__ikhono__*` to permissions.allow
+- With `--proactive`: adds an always-on rule file that makes the AI automatically search iKhono for relevant skills before starting any task. Not supported on Claude Desktop (no rule file mechanism)
 
 Safe to run multiple times — existing configs are merged, not overwritten.
 

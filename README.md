@@ -1,15 +1,11 @@
 <br>
 
 <p align="center">
-  <img src="assets/logo-wide-light.png#gh-light-mode-only" alt="iKhono" width="60%">
-  <img src="assets/logo-wide-dark.png#gh-dark-mode-only" alt="iKhono" width="60%">
+  <img src="assets/logo-wide-light.png#gh-light-mode-only" alt="iKhono" width="60%" height="100px">
+  <img src="assets/logo-wide-dark.png#gh-dark-mode-only" alt="iKhono" height="100px">
 </p>
 
----
-
-<br>
-
-<h1 style="border:unset" align="center">The <span style="color:orange">hub</span> for AI Skills</h1>
+<h1 align="center">The <span style="color:orange">hub</span> for AI Skills</h1>
 
 <p align="center">
 Publish, discover, and use AI agent skills across all platforms.<br>
