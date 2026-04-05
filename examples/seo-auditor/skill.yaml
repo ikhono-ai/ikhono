@@ -1,0 +1,29 @@
+name: "seo-auditor"
+version: "1.0.0"
+description: "Audit websites for SEO, AI crawlability, and search engine visibility — covers technical SEO, meta tags, structured data, and llms.txt"
+author: "@ikh-skills"
+license: MIT
+triggers:
+  - "SEO audit"
+  - "check SEO"
+  - "review SEO"
+  - "audit this site for SEO"
+  - "is this site SEO friendly"
+  - "check AI crawlability"
+  - "check search engine visibility"
+categories:
+  - seo
+  - web
+platforms:
+  - claude
+  - cursor
+  - mcp
+config:
+  scope:
+    type: string
+    values: [full, technical, content, ai-crawl]
+    default: full
+  severity_threshold:
+    type: string
+    values: [low, medium, high, critical]
+    default: low

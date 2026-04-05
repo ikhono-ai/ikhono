@@ -79,7 +79,10 @@ Ratings help the community discover the best skills.
 
 ## What's Next?
 
+- **Browse skills on the web**: Visit [ikhono.io/skills](https://ikhono.io/skills) to search, filter, and explore skills from your browser
 - **Create your own skill**: See [Creating Skills](creating-skills.md)
+- **Publish from the web**: Sign in at [ikhono.io/login](https://ikhono.io/login) (GitHub or Google) and publish skills from your [dashboard](https://ikhono.io/dashboard)
+- **View author profiles**: Visit [ikhono.io/@ikhono](https://ikhono.io/@ikhono) to see creator bios and published skills
 - **Browse skill ideas**: See [Skill Ideas](../community/SKILL_IDEAS.md)
 - **Learn the format**: See [Skill Spec](skill-spec.md)
 

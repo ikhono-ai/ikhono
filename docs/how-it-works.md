@@ -90,3 +90,4 @@ Rate skills after using them (1-5 stars, optional review). Ratings help the comm
 | AI agent | Your machine / cloud | Uses MCP tools to interact with iKhono |
 | Registry API | iKhono servers | Stores and serves skills |
 | CLI (`ikh`) | Your machine | For skill creators to publish and manage skills |
+| Web UI | iKhono servers (`ikhono.io`) | Browse skills, view author profiles, publish/edit from browser |

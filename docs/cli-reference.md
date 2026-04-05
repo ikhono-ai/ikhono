@@ -48,16 +48,19 @@ Safe to run multiple times — existing configs are merged, not overwritten.
 Authenticate with the iKhono API. Saves credentials to `~/.ikhono/config.json`.
 
 ```bash
-ikh login
+ikh login              # GitHub SSO (default)
+ikh login --google     # Google sign-in
+ikh login --email user@example.com --password ...   # email/password
 ```
 
-Opens your browser for GitHub SSO.
+Opens your browser for OAuth (GitHub or Google). Accounts are automatically linked by email — if you sign in with Google and a GitHub account with the same email already exists, they are merged.
 
 | Option | Required | Description |
 |--------|----------|-------------|
-| `--email <email>` | No | Login with email instead of GitHub |
+| `--github` | No | Login with GitHub SSO (default) |
+| `--google` | No | Login with Google |
+| `--email <email>` | No | Login with email instead of OAuth |
 | `--password <password>` | No | Password (required with --email) |
-| `--api-url <url>` | No | Override the API URL |
 
 ### ikh whoami
 
@@ -188,7 +191,7 @@ Set automatically by `ikh login`. The MCP server also reads this file as a token
 ### First-time setup
 
 ```bash
-ikh login    # opens browser for GitHub SSO
+ikh login    # opens browser for GitHub SSO (or: ikh login --google)
 
 # Set up iKhono globally (MCP server + slash command)
 ikh setup --platform claude

@@ -2,12 +2,25 @@
 
 All notable changes to iKhono will be documented in this file.
 
+## [0.3.0] - 2026-04-05
+
+### Added
+- **Google Sign-In** — login with Google on the web and via `ikh login --google` in the CLI
+- **Web UI**:
+  - **Skill Search page** (`/skills`) — browse, search, filter, and sort skills with instant results
+  - **Skill Detail page** (`/skills/@author/skill-name`) — view skill content, rate, pin, see version history and MCP install snippets
+  - **Author Profile page** (`/@username`) — view creator bio and published skills
+  - **Web Dashboard** — publish new skills and edit existing skills directly from the browser at `/dashboard`
+- **Featured Skills** — popular skills section on the landing page
+
+### Improved
+- Account linking — Google and GitHub users with the same email are automatically linked
+
 ## [0.2.6] - 2026-04-03
 
 ### Added
 - Streamable HTTP transport — connect to `https://ikhono.io/mcp` directly, no npm install needed
 - `--proactive` flag for `ikh setup` — installs an always-on rule that checks iKhono for relevant skills on every task
-
 
 ## [0.2.0] - 2026-04-01
 

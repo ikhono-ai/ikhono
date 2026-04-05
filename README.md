@@ -23,8 +23,9 @@ Connect the MCP server once and every skill on the registry becomes instantly av
 AI coding agents are powerful but generic. **Skills** give them specialized expertise — security review, test writing, API design — crafted by the community.
 
 - 🔌 **Use a skill**: Connect the MCP server and search for what you need
-- ✏️ **Create a skill**: Write a SKILL.md, publish with one command
+- ✏️ **Create a skill**: Write a SKILL.md, publish with one command or from the [web dashboard](https://ikhono.io/dashboard)
 - 🌍 **Share a skill**: Your skills work on Claude, Cursor, Windsurf, Copilot, and Codex
+- 🔍 **Browse skills**: Explore the registry at [ikhono.io/skills](https://ikhono.io/skills)
 
 ## 🚀 Quick Start
 
@@ -100,7 +101,8 @@ Have expertise to share? Publish a skill in minutes:
 npm install -g @ikhono/cli
 
 # Login
-ikh login              # opens browser for GitHub SSO
+ikh login              # opens browser for GitHub SSO (default)
+# or: ikh login --google   (Google sign-in)
 
 # Scaffold a new skill
 ikh skill init my-skill
@@ -128,6 +130,16 @@ Your skill is now available to everyone on the registry as `@your-username/my-sk
 | [Skill Spec](docs/skill-spec.md) | Format reference |
 | [CLI Reference](docs/cli-reference.md) | Command-line tool docs |
 | [Platform Guides](docs/platforms/) | Per-platform setup instructions |
+
+## 🌐 Web UI
+
+Browse and manage skills from the browser at [ikhono.io](https://ikhono.io):
+
+- **[Skill Search](https://ikhono.io/skills)** — browse, search, filter, and sort skills
+- **[Skill Detail](https://ikhono.io/skills/@ikhono/skill-creator)** — view content, rate, pin, see version history and install snippets
+- **[Author Profiles](https://ikhono.io/@ikhono)** — view creator bio and published skills
+- **[Dashboard](https://ikhono.io/dashboard)** — publish new skills, edit existing ones, manage pins
+- **[Login](https://ikhono.io/login)** — sign in with GitHub or Google
 
 ## 🤝 Contributing
 

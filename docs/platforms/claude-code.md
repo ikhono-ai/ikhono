@@ -60,11 +60,11 @@ To use personalized features (pins, ratings, publishing), add your API token:
 Get your token by running:
 ```bash
 npm install -g @ikhono/cli
-ikh login              # opens browser for GitHub SSO
+ikh login              # opens browser for GitHub SSO (or: ikh login --google)
 cat ~/.ikhono/config.json
 ```
 
-> **Alternative:** `ikh login --email you@example.com --password yourpassword`
+> **Alternatives:** `ikh login --google` (Google sign-in) or `ikh login --email you@example.com --password yourpassword`
 
 ## Scaffolding a Skill for Claude Code
 

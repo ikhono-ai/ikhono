@@ -17,7 +17,7 @@ Skills are published under a slug like `@username/skill-name` and can be discove
 npm install -g @ikhono/cli
 
 # 2. Login
-ikh login              # opens browser for GitHub SSO
+ikh login              # opens browser for GitHub SSO (or: ikh login --google)
 
 # 3. Scaffold a new skill
 ikh skill init my-skill
